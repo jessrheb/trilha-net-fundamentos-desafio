@@ -7,7 +7,7 @@ namespace DesafioFundamentos.Models
     {
         private List<string> veiculos = [];
 
-        public static string NormalizarPlaca(string placa)
+        private static string NormalizarPlaca(string placa)
         {
             if (placa.Contains(' '))
             {
@@ -20,7 +20,7 @@ namespace DesafioFundamentos.Models
 
         public void AdicionarVeiculo()
         {
-            Console.WriteLine("Digite a placa do veículo para estacionar:");
+            Console.WriteLine("Digite a placa do veículo que você quer estacionar:");
             string placaDoVeiculo = Console.ReadLine().ToUpper();
             string placaMercosul = @"^([a-z]{3}\d{1}[a-z]{1}\d{2}[a-z]{1})$";
 
